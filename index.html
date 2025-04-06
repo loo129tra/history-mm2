@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>История MM2</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background: #111;
+      color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #444;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin: 20px 0;
+    }
+    button:hover {
+      background-color: #666;
+    }
+    .fanfic {
+      display: none;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: left;
+      line-height: 1.8;
+      overflow-y: auto;
+      max-height: 70vh;
+      opacity: 0;
+      transition: opacity 1s;
+    }
+
+    /* Подсветка ролей */
+    .sheriff {
+      color: #4FC3F7;
+      font-weight: bold;
+    }
+    .killer {
+      color: #EF5350;
+      font-weight: bold;
+    }
+    .innocent {
+      color: #81C784;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      .fanfic {
+        font-size: 0.95em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>История MM2</h1>
+
+  <button id="read-btn">Читать</button>
+
+  <div id="chapter1" class="fanfic">
+    <h2>Глава 1: Первое подозрение</h2>
+    <p><strong>Лобби, 00:01.</strong> Ваня и Тимофей стояли перед экраном, ожидая загрузки карты. В этот раз выпала "Биолаб" — старая лаборатория с узкими коридорами и множеством укрытий.</p>
+    <p>— Ну давай, только не убийца, — пробормотал Тимофей, глядя на экран. <span class="innocent">"Вы — невинный"</span>.</p>
+    <p>— Мне повезло, — усмехнулся Ваня. На его экране загорелась надпись <span class="sheriff">"Вы — шериф"</span>.</p>
+    <p>Игра началась.</p>
+    <p>Сначала всё было тихо. Кто-то собирал монеты, кто-то просто бегал. Но Тимофей начал замечать странное поведение: один игрок исчез, потом второй. Никто не поднимал тревогу.</p>
+    <p>— Ваня, что-то не так, — сказал он. — Люди пропадают.</p>
+    <p>— Я на чеку, — ответил Ваня, крепче сжав револьвер. — Если увижу убийцу — сразу стреляю.</p>
+    <p>Шаги. Кто-то крадётся позади. Тимофей обернулся — и увидел, как игрок в чёрном плаще бросается на другого. Нож в руке сверкнул в тусклом свете.</p>
+    <p>— Убийца! — крикнул он, — Ваня, сзади!</p>
+    <p>Ваня вскинул оружие и выстрелил. Но было поздно: нож уже пронзил грудь игрока. Он упал. Пуля ударила в стену. Убийца исчез в тени.</p>
+    <p>— Мы его не остановили... — прошептал Тимофей.</p>
+    <p>С тех пор, игра между ними изменилась.</p>
+  </div>
+
+  <button id="next-btn" style="display: none;">Перелистнуть</button>
+
+  <div id="chapter2" class="fanfic">
+    <h2>Глава 2: Новичок</h2>
+    <p>На следующий день к ним присоединилась Рита. Она давно играла в MM2, но с этими парнями — впервые.</p>
+    <p>— Кто вы в этой партии? — спросила она с ухмылкой, пока карта загружалась.</p>
+    <p>— <span class="sheriff">Шериф</span>, — ответила она сразу после загрузки. — Так что ведите себя хорошо.</p>
+    <p>Тимофей прочитал: <span class="killer">"Вы — убийца"</span>. Его лицо стало серьёзным. Ваня — <span class="innocent">невинный</span>.</p>
+    <p>Рита начала патрулировать карту. С канцелярской точностью она запоминала маршруты игроков, слушала шаги, анализировала поведение.</p>
+    <p>— Тимофей как-то слишком молчит, — заметила она через пару минут. — Обычно ты не такой тихий?</p>
+    <p>Тимофей ничего не ответил. Он уже вычеркнул двух игроков в дальнем коридоре.</p>
+    <p>Ваня начал подозревать, но не хотел верить — неужели его друг способен...?</p>
+    <p>Рита повернула за угол и увидела тело. Она вскинула оружие.</p>
+    <p>— Кто это сделал?! — Тимофей шагнул из тени, лицо спокойное.</p>
+    <p>— Прости, — сказал он, но она выстрелила первой.</p>
+    <p>Её пуля ранила, но не убила.
+
+
+Тимофей исчез, оставив за собой кровавый след.</p>
+    <p>— Он не обычный игрок... — прошептала Рита. — С ним будет сложно.</p>
+  </div>
+
+  <button id="chapter3-btn" style="display: none;">Читать III главу</button>
+
+  <div id="chapter3" class="fanfic">
+    <h2>Глава 3: Игра без правил</h2>
+    <p>Они снова в лобби. Тишина. Все трое были задумчивы.</p>
+    <p>Карта загружается — новая, неизвестная. Темнота, сиреневый свет, лабиринты.</p>
+    <p>Система написала: <span class="killer">"Один из вас — убийца"</span>. Но ни у кого не было <span class="sheriff">роли шерифа</span>.</p>
+    <p>— Это баг? — удивился Ваня.</p>
+    <p>— Или кто-то врёт, — Рита прищурилась.</p>
+    <p>Тимофей нашёл на полу записку: «Осторожно. Она среди нас».</p>
+    <p>— Что значит “она”? — прошептал он.</p>
+    <p>Свет погас. Выстрел. Кто-то упал.</p>
+    <p>Ваня метнулся вперёд, но в темноте увидел только силуэт. В его руке блеснул пистолет — <span class="sheriff">Рита</span>?</p>
+    <p>— Кто стрелял? — тишина.</p>
+    <p>Когда свет вернулся, Тимофей стоял один. Перед ним — тело Риты.</p>
+    <p>На экране появилось сообщение: <em>«Игра окончена. Победителей нет.»</em></p>
+    <p>— Я... не убивал... — прошептал он.</p>
+    <p><strong>Но MM2 запомнила. И ждала их в следующий раз.</strong></p>
+  </div>
+
+  <script>
+    const readBtn = document.getElementById('read-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const chapter3Btn = document.getElementById('chapter3-btn');
+
+    const chapter1 = document.getElementById('chapter1');
+    const chapter2 = document.getElementById('chapter2');
+    const chapter3 = document.getElementById('chapter3');
+
+    function fadeIn(element) {
+      element.style.display = 'block';
+      setTimeout(() => { element.style.opacity = 1; }, 50);
+    }
+
+    function fadeOut(element, callback) {
+      element.style.opacity = 0;
+      setTimeout(() => {
+        element.style.display = 'none';
+        if (callback) callback();
+      }, 500);
+    }
+
+    readBtn.addEventListener('click', () => {
+      fadeIn(chapter1);
+      readBtn.style.display = 'none';
+      nextBtn.style.display = 'inline-block';
+    });
+
+    nextBtn.addEventListener('click', () => {
+      fadeOut(chapter1, () => {
+        fadeIn(chapter2);
+      });
+      nextBtn.style.display = 'none';
+      chapter3Btn.style.display = 'inline-block';
+    });
+
+    chapter3Btn.addEventListener('click', () => {
+      fadeOut(chapter2, () => {
+        fadeIn(chapter3);
+      });
+      chapter3Btn.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
